@@ -1,9 +1,7 @@
 ---
 title: "20. Valid Parentheses"
-difficult: "easy"
+difficult: "Easy"
 ---
-
-# 20. Valid Parentheses
 
 Given a string containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
 
