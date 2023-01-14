@@ -1,9 +1,11 @@
 ---
-title: "7. Reverse Integer"
-difficult: "Medium"
+id: 7
+title: "Reverse Integer"
+difficulty: "medium"
+topics: ["Math"]
 ---
 
-Given a signed 32-bit integer `x`, return `x` with its digits reversed. If reversing `x` causes the value to go outside the signed 32-bit integer range `[-231, 231 - 1]`, then return `0`.
+Given a signed 32-bit integer <mark>x</mark>, return <mark>x</mark> with its digits reversed. If reversing <mark>x</mark> causes the value to go outside the signed 32-bit integer range <mark>[-231, 231 - 1]</mark>, then return <mark>0</mark>.
 
 **Assume the environment does not allow you to store 64-bit integers (signed or unsigned).**
 

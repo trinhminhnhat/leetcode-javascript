@@ -1,23 +1,29 @@
 import Link from 'next/link';
 
-import "styles/globals.css";
+import 'styles/globals.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     const header = (
-        <header>
-            <div>
-                <Link href="/">
-                    <h1>LeetCode Solutions - JavaScript</h1>
-                </Link>
-            </div>
+        <header className="text-center p-10 text-4xl font-bold bg-primary">
+            <Link href="/">
+                <h1>LeetCode Solutions - JavaScript</h1>
+            </Link>
         </header>
     );
 
     const footer = (
-        <footer>
-            <div>
-                <h3>Designed by Trịnh Minh Nhật</h3>
-            </div>
+        <footer className="sticky top-[100vh] text-center p-5 text-lg font-bold bg-primary">
+            <h3>
+                &#169; {new Date().getFullYear()}. Created by{' '}
+                <a
+                    className="underline text-blue"
+                    href="https://github.com/trinhminhnhat/leetcode-javascript"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Trịnh Minh Nhật
+                </a>
+            </h3>
         </footer>
     );
 
@@ -25,9 +31,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html>
             <head />
             <body>
-                {header}
-                {children}
-                {footer}
+                <div className="min-h-screen">
+                    {header}
+                    <div className="max-w-7xl mx-auto p-10">{children}</div>
+                    {footer}
+                </div>
             </body>
         </html>
     );

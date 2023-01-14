@@ -27,10 +27,10 @@ const Post = (props: any) => {
 
     return (
         <div>
-            Post {slug}
-            <div>
+            <h1 className="text-3xl">{post.data.title}</h1>
+            <article className="prose prose-lg max-w-none prose-mark:p-5">
                 <Markdown>{post.content}</Markdown>
-            </div>
+            </article>
         </div>
     );
 };

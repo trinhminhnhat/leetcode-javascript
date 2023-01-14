@@ -1,5 +1,7 @@
 export interface PostMetaData {
+    id: number;
     title: string;
     slug: string;
-    difficult: string;
+    difficulty: string;
+    topics: string[];
 }
