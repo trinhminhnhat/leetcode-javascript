@@ -1,9 +1,11 @@
 ---
-title: "20. Valid Parentheses"
-difficult: "Easy"
+id: 20
+title: "Valid Parentheses"
+difficulty: "easy"
+topics: ["String", "Stack"]
 ---
 
-Given a string containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+Given a string containing just the characters <mark>'('</mark>,  <mark>')'</mark>, <mark>'{'</mark>, <mark>'}'</mark>, <mark>'['</mark> and <mark>']'</mark>, determine if the input string is valid.
 
 An input string is valid if:
 
@@ -35,4 +37,4 @@ Output: false
 **Constraints:**
 
 - 1 <= s.length <= 104
-- s consists of parentheses only `'()[]{}'`.
+- s consists of parentheses only <mark>'()[]{}'</mark>.

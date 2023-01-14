@@ -13,13 +13,15 @@ const getPostMetaData = (): PostMetaData[] => {
         const matterResult = matter(fileContent);
 
         return {
+            id: matterResult.data.id,
             title: matterResult.data.title,
-            difficult: matterResult.data.difficult,
+            difficulty: matterResult.data.difficulty,
+            topics: matterResult.data.topics,
             slug: fileName.replace('.md', ''),
         };
     });
 
-    return posts;
+    return posts.sort((a, b) => a.id - b.id);
 };
 
 export { getPostMetaData };
