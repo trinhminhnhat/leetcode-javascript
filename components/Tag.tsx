@@ -1,12 +1,15 @@
-const Tag = ({ difficulty }: { difficulty: string }) => {
+const Tag = ({ difficulty, hasBorder = false }: { difficulty: string; hasBorder?: boolean }) => {
     const config: any = {
-        Easy: 'bg-lightGreen text-green',
-        Medium: 'bg-yellow text-orange',
-        Hard: 'bg-pink text-red',
+        easy: hasBorder ? 'bg-lightGreen text-green' : 'text-green',
+        medium: hasBorder ? 'bg-yellow text-orange' : 'text-orange',
+        hard: hasBorder ? 'bg-pink text-red' : 'text-red',
     };
 
     return (
-        <div className={`inline-block px-5 py-1 w-[100px] border rounded-[9999px] ${config[difficulty]}`}>
+        <div
+            className={`first-letter:uppercase text-center inline-block px-2 py-1 w-[85px] transition-all ${hasBorder && 'border rounded-[9999px] hover:scale-105'
+                } ${config[difficulty]}`}
+        >
             {difficulty}
         </div>
     );
